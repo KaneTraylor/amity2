@@ -1,7 +1,28 @@
-body {
-    font-family: 'Roobert', serif;
-    background-color: #f5f5f5;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+
 
 #secondHolder {
     background: #1a1a1a;
@@ -1214,7 +1235,7 @@ button[disabled] svg {
     display: flex;
     position: relative;
     animation: scroll 20s linear infinite;
-    padding: 3px;
+    padding: 0px;
 }
 
 .marquee:hover {
@@ -1252,7 +1273,7 @@ button[disabled] svg {
 .firstSectionHolder {
     position: relative;
     inset: 0px;
-    background-image: url("/assets/images/marble.png");
+    background-image: url("assets/images/herobackground.png");
     background-size: cover;
     background-position: center center;
     height: 100%;
@@ -1280,6 +1301,7 @@ button[disabled] svg {
     box-shadow: 25px 25px 45px 0px dimgray;
     position: absolute;
     top: 0px;
+    margin-left: 50px;
 }
 
 .main_img {
@@ -1350,6 +1372,7 @@ button[disabled] svg {
 #iconicHolder {
     display: flex;
     grid-gap: 50px;
+    justify-content: center;
 }
 
 .smallestDimTexts {
@@ -1972,7 +1995,7 @@ button[disabled] svg {
 
     .brandsHolder {
         margin-top: 60px;
-        background: white;
+        background: transparent;
         text-align: center;
         padding-top: 35px;
         padding-bottom: 35px;
