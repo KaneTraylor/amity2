@@ -1476,6 +1476,7 @@ button[disabled] svg {
     font-family: 'Inter', sans-serif;
     padding: 3px 10px;
     border-radius: 5px;
+    display: inline-block;
 }
 
 
@@ -1781,7 +1782,9 @@ button[disabled] svg {
     height: auto;
 }
 
-
+.showOnMobile {
+    display: none;
+}
 
 
 
@@ -1932,15 +1935,31 @@ button[disabled] svg {
 
 /* total website responsiveness  */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     .titantexts {
         font-size: 2.5rem;
         line-height: 2.5rem;
         margin-top: 2.5rem;
+        text-align: center;
+    }
+
+    .getPortfolio {
+        width: 100%;
     }
 
     .titansmallDesc {
         font-size: 1rem;
+        text-align: center;
+    }
+
+    .smallDimTexts {
+        text-align: center;
+        font-size: 13px;
+        margin-top: 0px;
+    }
+
+    .smallBar {
+        display: none;
     }
 
     .mainsection {
@@ -1948,7 +1967,23 @@ button[disabled] svg {
     }
 
     #iconicHolder {
-        display: block;
+        display: none;
+    }
+
+    .brandsHolder {
+        margin-top: 60px;
+        background: white;
+        text-align: center;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        margin-left: -25px;
+        margin-right: -55px;
+    }
+
+    .brandText {
+        text-align: center;
+        max-width: unset;
+        padding-bottom: 15px;
     }
 
     .iconictabs {
@@ -1960,9 +1995,10 @@ button[disabled] svg {
     }
 
     #secondHolder {
-        top: -2rem;
+        top: -3rem;
         margin: unset;
         padding-top: 25px;
+        border-radius: 0px;
     }
 
     .users {
@@ -1981,6 +2017,14 @@ button[disabled] svg {
 
     .exptext {
         font-size: 2rem;
+    }
+
+    #experienceHolder .getstarted {
+        display: none;
+    }
+
+    .showOnMobile {
+        display: block;
     }
 
     #experienceHolder {
