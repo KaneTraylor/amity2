@@ -1245,6 +1245,17 @@ button[disabled] svg {
 
 }
 
+.container-hero2 {
+    padding: 25px;
+    width: auto;
+    border: 1px solid #000000;
+    box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.75);
+    background-color: #ffffff;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
 .marquee {
     display: flex;
     position: relative;
@@ -1384,7 +1395,9 @@ button[disabled] svg {
 
 #iconicHolder {
     display: flex;
-    grid-gap: 50px;
+    flex-direction: row;
+    justify-content: ;
+    grid-gap: 90px;
     justify-content: center;
 }
 
@@ -2011,7 +2024,7 @@ button[disabled] svg {
         background: transparent;
         text-align: center;
         padding-top: 35px;
-        padding-bottom: 35px;
+        padding-bottom: 75px;
         margin-left: -25px;
         margin-right: -55px;
     }
