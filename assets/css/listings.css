@@ -1,0 +1,222 @@
+.main-section {
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 105px;
+    margin-bottom: 105px;
+}
+
+
+.divider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  .content {
+    flex-basis: 50%;
+    margin-left: 100px;
+  }
+  
+  .image {
+    flex-basis: 30%;
+    width: 50%;
+  }
+  
+  
+.image img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  @font-face {
+    font-family: Roobert;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Roobert/Roobert-Light.otf) format("opentype");
+    font-weight: 100 200;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Roobert;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Roobert/Roobert-Regular.otf) format("opentype");
+    font-weight: 300 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Roobert;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Roobert/Roobert-Medium.otf) format("opentype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Roobert;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Roobert/Roobert-SemiBold.otf) format("opentype");
+    font-weight: 600 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Roobert;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Roobert/Roobert-Bold.otf) format("opentype");
+    font-weight: 800 900;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Roobert;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Roobert/Roobert-LightItalic.otf) format("opentype");
+    font-weight: 100 300;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Roobert;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Roobert/Roobert-RegularItalic.otf) format("opentype");
+    font-weight: 400 500;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Roobert;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Roobert/Roobert-MediumItalic.otf) format("opentype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Roobert;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Roobert/Roobert-SemiBoldItalic.otf) format("opentype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Roobert;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Roobert/Roobert-BoldItalic.otf) format("opentype");
+    font-weight: 800 900;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-Light.woff2) format("woff2"),url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-Light.woff) format("woff");
+    font-weight: 100 300;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-Regular.woff2) format("woff2"),url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-Regular.woff) format("woff");
+    font-weight: 400 500;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-SemiBold.woff2) format("woff2"),url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-SemiBold.woff) format("woff");
+    font-weight: 600 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-Bold.woff2) format("woff2"),url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-Bold.woff) format("woff");
+    font-weight: 800 900;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-LightItalic.woff2) format("woff2"),url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-LightItalic.woff) format("woff");
+    font-weight: 100 300;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-Italic.woff2) format("woff2"),url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-Italic.woff) format("woff");
+    font-weight: 400 500;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-MediumItalic.woff2) format("woff2"),url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-MediumItalic.woff) format("woff");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-SemiBoldItalic.woff2) format("woff2"),url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-SemiBoldItalic.woff) format("woff");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-BoldItalic.woff2) format("woff2"),url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Inter/Inter-BoldItalic.woff) format("woff");
+    font-weight: 800 900;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Publico-Medium;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Publico/Publico-Medium.otf) format("opentype")
+}
+
+@font-face {
+    font-family: Publico-Roman;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Publico/Publico-Roman.otf) format("opentype")
+}
+
+@font-face {
+    font-family: NeueHaasUnicaPro-Regular;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/NeueHaasUnicaPro/NeueHaasUnicaPro-Regular.otf) format("opentype")
+}
+
+@font-face {
+    font-family: NeueHaasUnicaPro-Medium;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/NeueHaasUnicaPro/NeueHaasUnicaPro-Medium.otf) format("opentype")
+}
+
+@font-face {
+    font-family: NeueHaasUnicaPro-Bold;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/NeueHaasUnicaPro/NeueHaasUnicaPro-Bold.otf) format("opentype")
+}

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets\css\listings.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,1172 +27,471 @@
 
     <link rel="stylesheet" href="assets/css/root.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Amity real estate | home</title>
+    <title>Amity real estate | Listings</title>
 </head>
 
 <body>
 
-
-    <!-- navigation is at first section  -->
-
-    <div style="background-image: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80g);"
-        class="firstSectionHolder ">
-        <div class=" col-md-8 text-center mx-auto ">
-
-            <!-- navigation section  -->
-            <nav class="main_navbar">
-                <div class="navbartabs">
-                    <img src="assets/images/logo.png" alt="" class="mainlogo">
-                </div>
-                <div class="navrightparts">
+      <!-- navigation section  -->
+      <nav class="main_navbar">
+        <div class="navbartabs">
+            <img src="assets/images/logo.png" alt="" class="mainlogo">
+        </div>
+        <div class="navrightparts">
 
 
-                    <div class="navbartab" onclick="showSubMenu(this)">
-                        What we offer
-                        <span class="arrowtext">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
-                                class="css-1v4xcoh" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+            <div class="navbartab" onclick="showSubMenu(this)">
+                What we offer
+                <span class="arrowtext">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                        class="css-1v4xcoh" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                        </path>
+                    </svg>
+                </span>
+
+
+                <div class="detailedSubMenu d-none">
+                    <p class="detailedNavText">lorem</p>
+
+                    <a href="/" class="menutabline">
+                        <div class="menuIcon">
+                            <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
+                                <path
+                                    d="M8.938 12.542q.479.458 1.187.427.708-.031 1.042-.531L15.5 6l-6.438 4.333q-.52.355-.562 1.052-.042.698.438 1.157ZM10.021 4q1.25 0 2.25.323t1.812.802l-1.437.937q-.584-.27-1.219-.416-.635-.146-1.406-.146-2.709 0-4.615 1.948Q3.5 9.396 3.5 12q0 .792.115 1.302.114.51.364 1.198H16q.271-.688.385-1.26.115-.573.115-1.24 0-.875-.24-1.75-.239-.875-.698-1.604l.896-1.354q.73 1 1.136 2.208.406 1.208.406 2.458 0 1.063-.177 1.854-.177.792-.573 1.459-.208.354-.531.541Q16.396 16 16 16H4q-.396 0-.719-.188-.323-.187-.531-.541-.396-.667-.573-1.459Q2 13.021 2 11.958q0-1.666.635-3.114.636-1.448 1.719-2.521Q5.438 5.25 6.906 4.625 8.375 4 10.021 4ZM10 9.812Z">
                                 </path>
                             </svg>
-                        </span>
-
-
-                        <div class="detailedSubMenu d-none">
-                            <p class="detailedNavText">lorem</p>
-
-                            <a href="/" class="menutabline">
-                                <div class="menuIcon">
-                                    <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
-                                        <path
-                                            d="M8.938 12.542q.479.458 1.187.427.708-.031 1.042-.531L15.5 6l-6.438 4.333q-.52.355-.562 1.052-.042.698.438 1.157ZM10.021 4q1.25 0 2.25.323t1.812.802l-1.437.937q-.584-.27-1.219-.416-.635-.146-1.406-.146-2.709 0-4.615 1.948Q3.5 9.396 3.5 12q0 .792.115 1.302.114.51.364 1.198H16q.271-.688.385-1.26.115-.573.115-1.24 0-.875-.24-1.75-.239-.875-.698-1.604l.896-1.354q.73 1 1.136 2.208.406 1.208.406 2.458 0 1.063-.177 1.854-.177.792-.573 1.459-.208.354-.531.541Q16.396 16 16 16H4q-.396 0-.719-.188-.323-.187-.531-.541-.396-.667-.573-1.459Q2 13.021 2 11.958q0-1.666.635-3.114.636-1.448 1.719-2.521Q5.438 5.25 6.906 4.625 8.375 4 10.021 4ZM10 9.812Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="menutext">
-                                    <p class="normText">Pay Your Rent</p>
-                                    <p class="dimTexts">Lorem</p>
-                                </div>
-                            </a>
-
-                            <a href="/" class="menutabline">
-                                <div class="menuIcon">
-                                    <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
-                                        <path
-                                            d="M9.271 17.958q-3.063-.291-5.156-2.552Q2.021 13.146 2.021 10t2.094-5.406q2.093-2.261 5.156-2.552v2q-2.229.291-3.74 1.979Q4.021 7.708 4.021 10t1.51 3.979q1.511 1.688 3.74 1.979Zm1.5 0v-2q2.041-.25 3.5-1.708 1.458-1.458 1.708-3.5h2q-.271 2.875-2.302 4.906-2.031 2.032-4.906 2.302Zm5.208-8.708q-.25-2.042-1.708-3.5-1.459-1.458-3.5-1.708v-2q2.875.27 4.906 2.302 2.031 2.031 2.302 4.906Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="menutext">
-                                    <p class="normText">lorem</p>
-                                    <p class="dimTexts">lorem</p>
-                                </div>
-                            </a>
-
-                            <a href="/" class="menutabline">
-                                <div class="menuIcon">
-                                    <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
-                                        <path
-                                            d="M9.25 16v-5.688L5.5 6.562V9H4V4h5v1.5H6.562l4.188 4.188V16Zm2.875-7.062-1.063-1.063L13.438 5.5H11V4h5v5h-1.5V6.562Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="menutext">
-                                    <p class="normText">lorem</p>
-                                    <p class="dimTexts">lorem</p>
-                                </div>
-                            </a>
-
-                            <div class="lineThroughMenu"></div>
-
-                            <a href="/" class="menutabline">
-                                <div class="menuIcon">
-                                    <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
-                                        <path
-                                            d="M13.25 9q.312 0 .531-.219Q14 8.562 14 8.25q0-.312-.219-.531-.219-.219-.531-.219-.312 0-.531.219-.219.219-.219.531 0 .312.219.531.219.219.531.219ZM7 7.5h4V6H7ZM4 17q-.667-2.583-1.333-4.729Q2 10.125 2 8q0-1.875 1.312-3.188Q4.625 3.5 6.5 3.5h4.146q.625-.729 1.5-1.115Q13.021 2 14 2q.417 0 .708.292Q15 2.583 15 3q0 .167-.042.333-.041.167-.125.334-.104.208-.198.406-.093.198-.135.427l2 2H18V12l-2.25.5L14.5 17H10v-1.5H8.5V17Zm1.125-1.5H7V14h4.5v1.5h1.854l1.188-4.271 1.958-.437V8h-.625L13 5.125q0-.396.052-.771t.156-.75q-.541.167-1.01.5-.469.334-.802.896H6.5q-1.25 0-2.125.875T3.5 8q0 1.729.552 3.573.552 1.844 1.073 3.927ZM10 10Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="menutext">
-                                    <p class="normText">lorem</p>
-                                    <p class="dimTexts">lorem</p>
-                                </div>
-                            </a>
-
                         </div>
-                    </div>
+                        <div class="menutext">
+                            <p class="normText">Pay Your Rent</p>
+                            <p class="dimTexts">Lorem</p>
+                        </div>
+                    </a>
 
-
-
-                    <div class="navbartab">
-                        Why Amity
-                    </div>
-                    <div class="navbartab">
-                        Pricing
-                    </div>
-
-
-                    <div class="navbartab" onclick="showSubMenu(this)">
-                        Resources
-                        <span class="arrowtext">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
-                                class="css-1v4xcoh" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                    <a href="/" class="menutabline">
+                        <div class="menuIcon">
+                            <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
+                                <path
+                                    d="M9.271 17.958q-3.063-.291-5.156-2.552Q2.021 13.146 2.021 10t2.094-5.406q2.093-2.261 5.156-2.552v2q-2.229.291-3.74 1.979Q4.021 7.708 4.021 10t1.51 3.979q1.511 1.688 3.74 1.979Zm1.5 0v-2q2.041-.25 3.5-1.708 1.458-1.458 1.708-3.5h2q-.271 2.875-2.302 4.906-2.031 2.032-4.906 2.302Zm5.208-8.708q-.25-2.042-1.708-3.5-1.459-1.458-3.5-1.708v-2q2.875.27 4.906 2.302 2.031 2.031 2.302 4.906Z">
                                 </path>
                             </svg>
-                        </span>
-
-
-                        <div class="detailedSubMenu d-none">
-
-                            <a href="/" class="menutabline">
-                                <div class="menuIcon">
-                                    <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
-                                        <path
-                                            d="M8.938 12.542q.479.458 1.187.427.708-.031 1.042-.531L15.5 6l-6.438 4.333q-.52.355-.562 1.052-.042.698.438 1.157ZM10.021 4q1.25 0 2.25.323t1.812.802l-1.437.937q-.584-.27-1.219-.416-.635-.146-1.406-.146-2.709 0-4.615 1.948Q3.5 9.396 3.5 12q0 .792.115 1.302.114.51.364 1.198H16q.271-.688.385-1.26.115-.573.115-1.24 0-.875-.24-1.75-.239-.875-.698-1.604l.896-1.354q.73 1 1.136 2.208.406 1.208.406 2.458 0 1.063-.177 1.854-.177.792-.573 1.459-.208.354-.531.541Q16.396 16 16 16H4q-.396 0-.719-.188-.323-.187-.531-.541-.396-.667-.573-1.459Q2 13.021 2 11.958q0-1.666.635-3.114.636-1.448 1.719-2.521Q5.438 5.25 6.906 4.625 8.375 4 10.021 4ZM10 9.812Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="menutext">
-                                    <p class="normText">Pay More Rent</p>
-                                    <p class="dimTexts">lorem</p>
-                                </div>
-                            </a>
-
-                            <a href="/" class="menutabline">
-                                <div class="menuIcon">
-                                    <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
-                                        <path
-                                            d="M9.271 17.958q-3.063-.291-5.156-2.552Q2.021 13.146 2.021 10t2.094-5.406q2.093-2.261 5.156-2.552v2q-2.229.291-3.74 1.979Q4.021 7.708 4.021 10t1.51 3.979q1.511 1.688 3.74 1.979Zm1.5 0v-2q2.041-.25 3.5-1.708 1.458-1.458 1.708-3.5h2q-.271 2.875-2.302 4.906-2.031 2.032-4.906 2.302Zm5.208-8.708q-.25-2.042-1.708-3.5-1.459-1.458-3.5-1.708v-2q2.875.27 4.906 2.302 2.031 2.031 2.302 4.906Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="menutext">
-                                    <p class="normText">lorem</p>
-                                    <p class="dimTexts">lorem</p>
-                                </div>
-                            </a>
-
-                            <a href="/" class="menutabline">
-                                <div class="menuIcon">
-                                    <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
-                                        <pathder
-                                            d="M9.25 16v-5.688L5.5 6.562V9H4V4h5v1.5H6.562l4.188 4.188V16Zm2.875-7.062-1.063-1.063L13.438 5.5H11V4h5v5h-1.5V6.562Z">
-                                            </path>
-                                    </svg>
-                                </div>
-                                <div class="menutext">
-                                    <p class="normText">lorem</p>
-                                    <p class="dimTexts">lorem</p>
-                                </div>
-                            </a>
-
-
-                            <a href="/" class="menutabline">
-                                <div class="menuIcon">
-                                    <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
-                                        <path
-                                            d="M13.25 9q.312 0 .531-.219Q14 8.562 14 8.25q0-.312-.219-.531-.219-.219-.531-.219-.312 0-.531.219-.219.219-.219.531 0 .312.219.531.219.219.531.219ZM7 7.5h4V6H7ZM4 17q-.667-2.583-1.333-4.729Q2 10.125 2 8q0-1.875 1.312-3.188Q4.625 3.5 6.5 3.5h4.146q.625-.729 1.5-1.115Q13.021 2 14 2q.417 0 .708.292Q15 2.583 15 3q0 .167-.042.333-.041.167-.125.334-.104.208-.198.406-.093.198-.135.427l2 2H18V12l-2.25.5L14.5 17H10v-1.5H8.5V17Zm1.125-1.5H7V14h4.5v1.5h1.854l1.188-4.271 1.958-.437V8h-.625L13 5.125q0-.396.052-.771t.156-.75q-.541.167-1.01.5-.469.334-.802.896H6.5q-1.25 0-2.125.875T3.5 8q0 1.729.552 3.573.552 1.844 1.073 3.927ZM10 10Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="menutext">
-                                    <p class="normText">lorem</p>
-                                    <p class="dimTexts">lorem</p>
-                                </div>
-                            </a>
-
                         </div>
+                        <div class="menutext">
+                            <p class="normText">lorem</p>
+                            <p class="dimTexts">lorem</p>
+                        </div>
+                    </a>
 
-                    </div>
-
-
-
-                    <div class="navbartab">
-                        Listings
-                    </div>
-                    <div class="navbartab">
-                        <a href="/" class="btn btn-dark getnavstarted">Login</a>
-                    </div>
-                </div>
-            </nav>
-
-
-
-
-
-            <nav class="mobileNav">
-                <div class="shownParts">
-
-                    <div class="menuBar" onclick="showSidebar(this)">
-                        <svg viewBox="0 0 32 32" focusable="false" class="chakra-icon css-178tnyu">
-                            <path d="M30 15.875L2 15.875" stroke="currentColor" fill="none"></path>
-                            <path d="M30 6L2 6" stroke="currentColor" fill="none"></path>
-                            <path d="M30 26L2 26" stroke="currentColor" fill="none"></path>
-                        </svg>
-                    </div>
-
-                    <img src="assets/images/logo.png" alt="" class="weblogo">
-                    <button class="btn btn-dark menugetstarted">Get Started</button>
-
-                </div>
-
-
-                <div class="sidemenuHolder">
-                    <div class="sideMenuHidden">
-
-                        <div class="crossIt" onclick="crossMenu(this)">
-                            <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-n059si">
-                                <path d="M19.4248 19.3311L4.57556 4.48181" stroke="currentColor"></path>
-                                <path d="M19.4248 4.48169L4.57556 19.3309" stroke="currentColor"></path>
+                    <a href="/" class="menutabline">
+                        <div class="menuIcon">
+                            <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
+                                <path
+                                    d="M9.25 16v-5.688L5.5 6.562V9H4V4h5v1.5H6.562l4.188 4.188V16Zm2.875-7.062-1.063-1.063L13.438 5.5H11V4h5v5h-1.5V6.562Z">
+                                </path>
                             </svg>
                         </div>
+                        <div class="menutext">
+                            <p class="normText">lorem</p>
+                            <p class="dimTexts">lorem</p>
+                        </div>
+                    </a>
 
-                        <div class="mbnavbartab" onclick="showSubMobileMenu(this)">
-                            What we offer
-                            <span class="arrowtext">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
-                                    class="css-1v4xcoh" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                    <div class="lineThroughMenu"></div>
+
+                    <a href="/" class="menutabline">
+                        <div class="menuIcon">
+                            <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
+                                <path
+                                    d="M13.25 9q.312 0 .531-.219Q14 8.562 14 8.25q0-.312-.219-.531-.219-.219-.531-.219-.312 0-.531.219-.219.219-.219.531 0 .312.219.531.219.219.531.219ZM7 7.5h4V6H7ZM4 17q-.667-2.583-1.333-4.729Q2 10.125 2 8q0-1.875 1.312-3.188Q4.625 3.5 6.5 3.5h4.146q.625-.729 1.5-1.115Q13.021 2 14 2q.417 0 .708.292Q15 2.583 15 3q0 .167-.042.333-.041.167-.125.334-.104.208-.198.406-.093.198-.135.427l2 2H18V12l-2.25.5L14.5 17H10v-1.5H8.5V17Zm1.125-1.5H7V14h4.5v1.5h1.854l1.188-4.271 1.958-.437V8h-.625L13 5.125q0-.396.052-.771t.156-.75q-.541.167-1.01.5-.469.334-.802.896H6.5q-1.25 0-2.125.875T3.5 8q0 1.729.552 3.573.552 1.844 1.073 3.927ZM10 10Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="menutext">
+                            <p class="normText">lorem</p>
+                            <p class="dimTexts">lorem</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+            <div class="navbartab">
+                Why Amity
+            </div>
+            <div class="navbartab">
+                Pricing
+            </div>
+
+
+            <div class="navbartab" onclick="showSubMenu(this)">
+                Resources
+                <span class="arrowtext">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                        class="css-1v4xcoh" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                        </path>
+                    </svg>
+                </span>
+
+
+                <div class="detailedSubMenu d-none">
+
+                    <a href="/" class="menutabline">
+                        <div class="menuIcon">
+                            <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
+                                <path
+                                    d="M8.938 12.542q.479.458 1.187.427.708-.031 1.042-.531L15.5 6l-6.438 4.333q-.52.355-.562 1.052-.042.698.438 1.157ZM10.021 4q1.25 0 2.25.323t1.812.802l-1.437.937q-.584-.27-1.219-.416-.635-.146-1.406-.146-2.709 0-4.615 1.948Q3.5 9.396 3.5 12q0 .792.115 1.302.114.51.364 1.198H16q.271-.688.385-1.26.115-.573.115-1.24 0-.875-.24-1.75-.239-.875-.698-1.604l.896-1.354q.73 1 1.136 2.208.406 1.208.406 2.458 0 1.063-.177 1.854-.177.792-.573 1.459-.208.354-.531.541Q16.396 16 16 16H4q-.396 0-.719-.188-.323-.187-.531-.541-.396-.667-.573-1.459Q2 13.021 2 11.958q0-1.666.635-3.114.636-1.448 1.719-2.521Q5.438 5.25 6.906 4.625 8.375 4 10.021 4ZM10 9.812Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="menutext">
+                            <p class="normText">Pay More Rent</p>
+                            <p class="dimTexts">lorem</p>
+                        </div>
+                    </a>
+
+                    <a href="/" class="menutabline">
+                        <div class="menuIcon">
+                            <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
+                                <path
+                                    d="M9.271 17.958q-3.063-.291-5.156-2.552Q2.021 13.146 2.021 10t2.094-5.406q2.093-2.261 5.156-2.552v2q-2.229.291-3.74 1.979Q4.021 7.708 4.021 10t1.51 3.979q1.511 1.688 3.74 1.979Zm1.5 0v-2q2.041-.25 3.5-1.708 1.458-1.458 1.708-3.5h2q-.271 2.875-2.302 4.906-2.031 2.032-4.906 2.302Zm5.208-8.708q-.25-2.042-1.708-3.5-1.459-1.458-3.5-1.708v-2q2.875.27 4.906 2.302 2.031 2.031 2.302 4.906Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="menutext">
+                            <p class="normText">lorem</p>
+                            <p class="dimTexts">lorem</p>
+                        </div>
+                    </a>
+
+                    <a href="/" class="menutabline">
+                        <div class="menuIcon">
+                            <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
+                                <pathder
+                                    d="M9.25 16v-5.688L5.5 6.562V9H4V4h5v1.5H6.562l4.188 4.188V16Zm2.875-7.062-1.063-1.063L13.438 5.5H11V4h5v5h-1.5V6.562Z">
+                                    </path>
+                            </svg>
+                        </div>
+                        <div class="menutext">
+                            <p class="normText">lorem</p>
+                            <p class="dimTexts">lorem</p>
+                        </div>
+                    </a>
+
+
+                    <a href="/" class="menutabline">
+                        <div class="menuIcon">
+                            <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
+                                <path
+                                    d="M13.25 9q.312 0 .531-.219Q14 8.562 14 8.25q0-.312-.219-.531-.219-.219-.531-.219-.312 0-.531.219-.219.219-.219.531 0 .312.219.531.219.219.531.219ZM7 7.5h4V6H7ZM4 17q-.667-2.583-1.333-4.729Q2 10.125 2 8q0-1.875 1.312-3.188Q4.625 3.5 6.5 3.5h4.146q.625-.729 1.5-1.115Q13.021 2 14 2q.417 0 .708.292Q15 2.583 15 3q0 .167-.042.333-.041.167-.125.334-.104.208-.198.406-.093.198-.135.427l2 2H18V12l-2.25.5L14.5 17H10v-1.5H8.5V17Zm1.125-1.5H7V14h4.5v1.5h1.854l1.188-4.271 1.958-.437V8h-.625L13 5.125q0-.396.052-.771t.156-.75q-.541.167-1.01.5-.469.334-.802.896H6.5q-1.25 0-2.125.875T3.5 8q0 1.729.552 3.573.552 1.844 1.073 3.927ZM10 10Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="menutext">
+                            <p class="normText">lorem</p>
+                            <p class="dimTexts">lorem</p>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="navbartab">
+                Listings
+            </div>
+            <div class="navbartab">
+                <a href="/" class="btn btn-dark getnavstarted">Login</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <nav class="mobileNav">
+        <div class="shownParts">
+
+            <div class="menuBar" onclick="showSidebar(this)">
+                <svg viewBox="0 0 32 32" focusable="false" class="chakra-icon css-178tnyu">
+                    <path d="M30 15.875L2 15.875" stroke="currentColor" fill="none"></path>
+                    <path d="M30 6L2 6" stroke="currentColor" fill="none"></path>
+                    <path d="M30 26L2 26" stroke="currentColor" fill="none"></path>
+                </svg>
+            </div>
+
+            <img src="assets/images/logo.png" alt="" class="weblogo">
+            <button class="btn btn-dark menugetstarted">Get Started</button>
+
+        </div>
+
+
+        <div class="sidemenuHolder">
+            <div class="sideMenuHidden">
+
+                <div class="crossIt" onclick="crossMenu(this)">
+                    <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-n059si">
+                        <path d="M19.4248 19.3311L4.57556 4.48181" stroke="currentColor"></path>
+                        <path d="M19.4248 4.48169L4.57556 19.3309" stroke="currentColor"></path>
+                    </svg>
+                </div>
+
+                <div class="mbnavbartab" onclick="showSubMobileMenu(this)">
+                    What we offer
+                    <span class="arrowtext">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                            class="css-1v4xcoh" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                            </path>
+                        </svg>
+                    </span>
+
+
+                    <div class="detailedSubMobileMenu d-none">
+                        <p class="detailedMbNav">Lorem</p>
+
+                        <a href="/" class="menutabline">
+                            <div class="mobilemenuIcon">
+                                <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
+                                    <path
+                                        d="M8.938 12.542q.479.458 1.187.427.708-.031 1.042-.531L15.5 6l-6.438 4.333q-.52.355-.562 1.052-.042.698.438 1.157ZM10.021 4q1.25 0 2.25.323t1.812.802l-1.437.937q-.584-.27-1.219-.416-.635-.146-1.406-.146-2.709 0-4.615 1.948Q3.5 9.396 3.5 12q0 .792.115 1.302.114.51.364 1.198H16q.271-.688.385-1.26.115-.573.115-1.24 0-.875-.24-1.75-.239-.875-.698-1.604l.896-1.354q.73 1 1.136 2.208.406 1.208.406 2.458 0 1.063-.177 1.854-.177.792-.573 1.459-.208.354-.531.541Q16.396 16 16 16H4q-.396 0-.719-.188-.323-.187-.531-.541-.396-.667-.573-1.459Q2 13.021 2 11.958q0-1.666.635-3.114.636-1.448 1.719-2.521Q5.438 5.25 6.906 4.625 8.375 4 10.021 4ZM10 9.812Z">
                                     </path>
                                 </svg>
-                            </span>
-
-
-                            <div class="detailedSubMobileMenu d-none">
-                                <p class="detailedMbNav">Lorem</p>
-
-                                <a href="/" class="menutabline">
-                                    <div class="mobilemenuIcon">
-                                        <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
-                                            <path
-                                                d="M8.938 12.542q.479.458 1.187.427.708-.031 1.042-.531L15.5 6l-6.438 4.333q-.52.355-.562 1.052-.042.698.438 1.157ZM10.021 4q1.25 0 2.25.323t1.812.802l-1.437.937q-.584-.27-1.219-.416-.635-.146-1.406-.146-2.709 0-4.615 1.948Q3.5 9.396 3.5 12q0 .792.115 1.302.114.51.364 1.198H16q.271-.688.385-1.26.115-.573.115-1.24 0-.875-.24-1.75-.239-.875-.698-1.604l.896-1.354q.73 1 1.136 2.208.406 1.208.406 2.458 0 1.063-.177 1.854-.177.792-.573 1.459-.208.354-.531.541Q16.396 16 16 16H4q-.396 0-.719-.188-.323-.187-.531-.541-.396-.667-.573-1.459Q2 13.021 2 11.958q0-1.666.635-3.114.636-1.448 1.719-2.521Q5.438 5.25 6.906 4.625 8.375 4 10.021 4ZM10 9.812Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <p class="normText">Pay Your Rent</p>
-                                </a>
-
-                                <a href="/" class="menutabline">
-                                    <div class="mobilemenuIcon">
-                                        <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
-                                            <path
-                                                d="M9.271 17.958q-3.063-.291-5.156-2.552Q2.021 13.146 2.021 10t2.094-5.406q2.093-2.261 5.156-2.552v2q-2.229.291-3.74 1.979Q4.021 7.708 4.021 10t1.51 3.979q1.511 1.688 3.74 1.979Zm1.5 0v-2q2.041-.25 3.5-1.708 1.458-1.458 1.708-3.5h2q-.271 2.875-2.302 4.906-2.031 2.032-4.906 2.302Zm5.208-8.708q-.25-2.042-1.708-3.5-1.459-1.458-3.5-1.708v-2q2.875.27 4.906 2.302 2.031 2.031 2.302 4.906Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <p class="normText">lorem</p>
-                                </a>
-
-                                <a href="/" class="menutabline">
-                                    <div class="mobilemenuIcon">
-                                        <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
-                                            <path
-                                                d="M13.25 9q.312 0 .531-.219Q14 8.562 14 8.25q0-.312-.219-.531-.219-.219-.531-.219-.312 0-.531.219-.219.219-.219.531 0 .312.219.531.219.219.531.219ZM7 7.5h4V6H7ZM4 17q-.667-2.583-1.333-4.729Q2 10.125 2 8q0-1.875 1.312-3.188Q4.625 3.5 6.5 3.5h4.146q.625-.729 1.5-1.115Q13.021 2 14 2q.417 0 .708.292Q15 2.583 15 3q0 .167-.042.333-.041.167-.125.334-.104.208-.198.406-.093.198-.135.427l2 2H18V12l-2.25.5L14.5 17H10v-1.5H8.5V17Zm1.125-1.5H7V14h4.5v1.5h1.854l1.188-4.271 1.958-.437V8h-.625L13 5.125q0-.396.052-.771t.156-.75q-.541.167-1.01.5-.469.334-.802.896H6.5q-1.25 0-2.125.875T3.5 8q0 1.729.552 3.573.552 1.844 1.073 3.927ZM10 10Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <p class="normText">lorem</p>
-                                </a>
-
-                                <div class="mobilelinethrough lineThroughMenu"></div>
-
-                                <a href="/" class="menutabline">
-                                    <div class="mobilemenuIcon">
-                                        <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
-                                            <path
-                                                d="M13.25 9q.312 0 .531-.219Q14 8.562 14 8.25q0-.312-.219-.531-.219-.219-.531-.219-.312 0-.531.219-.219.219-.219.531 0 .312.219.531.219.219.531.219ZM7 7.5h4V6H7ZM4 17q-.667-2.583-1.333-4.729Q2 10.125 2 8q0-1.875 1.312-3.188Q4.625 3.5 6.5 3.5h4.146q.625-.729 1.5-1.115Q13.021 2 14 2q.417 0 .708.292Q15 2.583 15 3q0 .167-.042.333-.041.167-.125.334-.104.208-.198.406-.093.198-.135.427l2 2H18V12l-2.25.5L14.5 17H10v-1.5H8.5V17Zm1.125-1.5H7V14h4.5v1.5h1.854l1.188-4.271 1.958-.437V8h-.625L13 5.125q0-.396.052-.771t.156-.75q-.541.167-1.01.5-.469.334-.802.896H6.5q-1.25 0-2.125.875T3.5 8q0 1.729.552 3.573.552 1.844 1.073 3.927ZM10 10Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <p class="normText">lorem</p>
-                                </a>
-
                             </div>
-                        </div>
+                            <p class="normText">Pay Your Rent</p>
+                        </a>
 
-                        <div class="mbnavbartab">
-                            Why Amity
-                        </div>
-                        <div class="mbnavbartab">
-                            Pricing
-                        </div>
-
-
-                        <div class="mbnavbartab" onclick="showSubMobileMenu(this)">
-                            Resources
-                            <span class="arrowtext">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
-                                    class="css-1v4xcoh" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                        <a href="/" class="menutabline">
+                            <div class="mobilemenuIcon">
+                                <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
+                                    <path
+                                        d="M9.271 17.958q-3.063-.291-5.156-2.552Q2.021 13.146 2.021 10t2.094-5.406q2.093-2.261 5.156-2.552v2q-2.229.291-3.74 1.979Q4.021 7.708 4.021 10t1.51 3.979q1.511 1.688 3.74 1.979Zm1.5 0v-2q2.041-.25 3.5-1.708 1.458-1.458 1.708-3.5h2q-.271 2.875-2.302 4.906-2.031 2.032-4.906 2.302Zm5.208-8.708q-.25-2.042-1.708-3.5-1.459-1.458-3.5-1.708v-2q2.875.27 4.906 2.302 2.031 2.031 2.302 4.906Z">
                                     </path>
                                 </svg>
-                            </span>
-
-
-                            <div class="detailedSubMobileMenu d-none">
-                                <p class="detailedMbNav">Pay More Rent</p>
-
-                                <a href="/" class="menutabline">
-                                    <div class="mobilemenuIcon">
-                                        <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
-                                            <path
-                                                d="M9.5 14q.292 0 .583-.073.292-.073.563-.219l1.833 1.813 1.042-1.042-1.813-1.833q.146-.271.219-.552.073-.282.073-.573 0-1.063-.719-1.802-.719-.74-1.781-.74-1.062 0-1.781.74Q7 10.458 7 11.521q0 1.041.729 1.76Q8.458 14 9.5 14Zm0-1.5q-.417 0-.708-.281-.292-.281-.292-.698 0-.417.292-.719.291-.302.708-.302t.708.302q.292.302.292.719t-.292.698q-.291.281-.708.281Zm-4 5.5q-.625 0-1.062-.438Q4 17.125 4 16.5v-13q0-.625.438-1.062Q4.875 2 5.5 2H12l4 4v10.5q0 .625-.438 1.062Q15.125 18 14.5 18ZM11 7V3.5H5.5v13h9V7ZM5.5 3.5v3.938V3.5v13-13Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <p class="normText">Lorem</p>
-                                </a>
-
-                                <a href="/" class="menutabline">
-                                    <div class="mobilemenuIcon">
-                                        <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
-                                            <path
-                                                d="M6 7.5h8V6H6ZM6 14h6v-1.5H6Zm0-3.25h8v-1.5H6ZM4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3h11q.625 0 1.062.438Q17 3.875 17 4.5v11q0 .625-.438 1.062Q16.125 17 15.5 17Zm0-1.5h11v-11h-11v11Zm0-11v11-11Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <p class="normText">Lorem</p>
-                                </a>
-
-
-                                <a href="/" class="menutabline">
-                                    <div class="mobilemenuIcon">
-                                        <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
-                                            <path
-                                                d="M4.5 17q-.604 0-1.052-.448Q3 16.104 3 15.5v-11q0-.625.448-1.062Q3.896 3 4.5 3h11q.625 0 1.062.438Q17 3.875 17 4.5v11q0 .604-.438 1.052Q16.125 17 15.5 17Zm0-1.5h11v-3h-2.333q-.479.896-1.323 1.448Q11 14.5 10 14.5q-1.021 0-1.865-.542-.843-.541-1.302-1.458H4.5v3ZM10 13q.833 0 1.417-.583Q12 11.833 12 11h3.5V4.5h-11V11H8q0 .833.583 1.417Q9.167 13 10 13Zm0-2L7 8l1.062-1.062L9.25 8.125V5.5h1.5v2.625l1.188-1.187L13 8Zm-5.5 4.5h11Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <p class="normText">Lorem</p>
-                                </a>
-
-                                <a href="/" class="menutabline">
-                                    <div class="mobilemenuIcon">
-                                        <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
-                                            <path
-                                                d="m8 13.5 5.5-3.5L8 6.5Zm2 4.5q-1.646 0-3.104-.625-1.458-.625-2.552-1.719t-1.719-2.552Q2 11.646 2 10q0-1.667.625-3.115.625-1.447 1.719-2.541Q5.438 3.25 6.896 2.625T10 2q1.667 0 3.115.625 1.447.625 2.541 1.719 1.094 1.094 1.719 2.541Q18 8.333 18 10q0 1.646-.625 3.104-.625 1.458-1.719 2.552t-2.541 1.719Q11.667 18 10 18Zm0-1.5q2.708 0 4.604-1.896T16.5 10q0-2.708-1.896-4.604T10 3.5q-2.708 0-4.604 1.896T3.5 10q0 2.708 1.896 4.604T10 16.5Zm0-6.5Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <p class="normText">Lorem</p>
-                                </a>
-
                             </div>
-                        </div>
+                            <p class="normText">lorem</p>
+                        </a>
 
-
-                        <div class="mbnavbartab">
-                            Listings
-                        </div>
-
-                        <button class="btn btn-dark menugetstarted hiddenmenugetstarted">Login</button>
-                    </div>
-                </div>
-            </nav>
-
-
-
-
-
-
-            <!-- other section  -->
-            <div class="row mainsection">
-                <div class="col-md-12">
-                    <div class="titantexts container-hero2">
-                        <h1>
-                            Change your living situation <br>
-                            <div class="gradient-text"> With Amity Properties</div>
-                    </div>
-                    <div class="titansmallDesc col-md-8 text-center mx-auto container-hero">
-                        Based out of huntington West Virginia. We offer affordable housing with amazing design concepts.
-                        Choose modern living.
-                    </div>
-                    <div class="button btn btn-dark px-5 getPortfolio">Pay my rent</div>
-                    <div class="button btn btn-dark px-5 getPortfolio">See Listings</div>
-                    <div class="smallDimTexts col-md-8 text-center mx-auto">
-                        <a href="/" class="dimlink">View privacy
-                            policy</a>
-                    </div>
-
-                    <div class="smallBar col-md-8 text-center mx-auto"></div>
-
-
-                    <div id="iconicHolder">
-  <div class="container-hero2 row">
-                                <div class=" iconictabs ">
-                                    <div class=" main_icon ">
-                                        <svg viewBox=" 0 0 24 24" focusable="false" class="chakra-icon shieldIcon">
-                                            <path
-                                                d="M10.95 15.55 16.6 9.9l-1.425-1.425L10.95 12.7l-2.1-2.1-1.425 1.425ZM12 22q-3.475-.875-5.737-3.988Q4 14.9 4 11.1V5l8-3 8 3v6.1q0 3.8-2.262 6.912Q15.475 21.125 12 22Z"
-                                                fill="currentColor"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="icon_name">
-                                        Renter protection
-                                    </div>
-                                </div>
-                              
-
-                                <div class="iconictabs">
-                                    <div class="main_icon">
-                                        5.0
-                                        <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon starSvgIcon">
-                                            <path
-                                                d="M12 3L14.2451 9.90983H21.5106L15.6327 14.1803L17.8779 21.0902L12 16.8197L6.12215 21.0902L8.36729 14.1803L2.48944 9.90983H9.75486L12 3Z"
-                                                fill="currentColor"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="icon_name specmt">
-                                        Google ratings <br>
-                                        <div class="smallestDimTexts"> As of 2/13/23 </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="iconictabs">
-                                    <div class="main_icon">
-                                        4.9
-                                        <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon starSvgIcon">
-                                            <path
-                                                d="M12 3L14.2451 9.90983H21.5106L15.6327 14.1803L17.8779 21.0902L12 16.8197L6.12215 21.0902L8.36729 14.1803L2.48944 9.90983H9.75486L12 3Z"
-                                                fill="currentColor"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="icon_name specmt">
-                                        Facebook Reviews <br>
-                                        <div class="smallestDimTexts"> As of 2/13/23 </div>
-                                    </div>
-                                </div>
-
+                        <a href="/" class="menutabline">
+                            <div class="mobilemenuIcon">
+                                <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
+                                    <path
+                                        d="M13.25 9q.312 0 .531-.219Q14 8.562 14 8.25q0-.312-.219-.531-.219-.219-.531-.219-.312 0-.531.219-.219.219-.219.531 0 .312.219.531.219.219.531.219ZM7 7.5h4V6H7ZM4 17q-.667-2.583-1.333-4.729Q2 10.125 2 8q0-1.875 1.312-3.188Q4.625 3.5 6.5 3.5h4.146q.625-.729 1.5-1.115Q13.021 2 14 2q.417 0 .708.292Q15 2.583 15 3q0 .167-.042.333-.041.167-.125.334-.104.208-.198.406-.093.198-.135.427l2 2H18V12l-2.25.5L14.5 17H10v-1.5H8.5V17Zm1.125-1.5H7V14h4.5v1.5h1.854l1.188-4.271 1.958-.437V8h-.625L13 5.125q0-.396.052-.771t.156-.75q-.541.167-1.01.5-.469.334-.802.896H6.5q-1.25 0-2.125.875T3.5 8q0 1.729.552 3.573.552 1.844 1.073 3.927ZM10 10Z">
+                                    </path>
+                                </svg>
                             </div>
-                        </div>
+                            <p class="normText">lorem</p>
+                        </a>
+
+                        <div class="mobilelinethrough lineThroughMenu"></div>
+
+                        <a href="/" class="menutabline">
+                            <div class="mobilemenuIcon">
+                                <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
+                                    <path
+                                        d="M13.25 9q.312 0 .531-.219Q14 8.562 14 8.25q0-.312-.219-.531-.219-.219-.531-.219-.312 0-.531.219-.219.219-.219.531 0 .312.219.531.219.219.531.219ZM7 7.5h4V6H7ZM4 17q-.667-2.583-1.333-4.729Q2 10.125 2 8q0-1.875 1.312-3.188Q4.625 3.5 6.5 3.5h4.146q.625-.729 1.5-1.115Q13.021 2 14 2q.417 0 .708.292Q15 2.583 15 3q0 .167-.042.333-.041.167-.125.334-.104.208-.198.406-.093.198-.135.427l2 2H18V12l-2.25.5L14.5 17H10v-1.5H8.5V17Zm1.125-1.5H7V14h4.5v1.5h1.854l1.188-4.271 1.958-.437V8h-.625L13 5.125q0-.396.052-.771t.156-.75q-.541.167-1.01.5-.469.334-.802.896H6.5q-1.25 0-2.125.875T3.5 8q0 1.729.552 3.573.552 1.844 1.073 3.927ZM10 10Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <p class="normText">lorem</p>
+                        </a>
+
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="mbnavbartab">
+                    Why Amity
+                </div>
+                <div class="mbnavbartab">
+                    Pricing
+                </div>
 
-                    <div class="col-12">
-                        <div class="row brandsHolder">
-                            <div class="col-md-2">
-                                <div class="brandText">Some of our company partners</div>
+
+                <div class="mbnavbartab" onclick="showSubMobileMenu(this)">
+                    Resources
+                    <span class="arrowtext">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                            class="css-1v4xcoh" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                            </path>
+                        </svg>
+                    </span>
+
+
+                    <div class="detailedSubMobileMenu d-none">
+                        <p class="detailedMbNav">Pay More Rent</p>
+
+                        <a href="/" class="menutabline">
+                            <div class="mobilemenuIcon">
+                                <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
+                                    <path
+                                        d="M9.5 14q.292 0 .583-.073.292-.073.563-.219l1.833 1.813 1.042-1.042-1.813-1.833q.146-.271.219-.552.073-.282.073-.573 0-1.063-.719-1.802-.719-.74-1.781-.74-1.062 0-1.781.74Q7 10.458 7 11.521q0 1.041.729 1.76Q8.458 14 9.5 14Zm0-1.5q-.417 0-.708-.281-.292-.281-.292-.698 0-.417.292-.719.291-.302.708-.302t.708.302q.292.302.292.719t-.292.698q-.291.281-.708.281Zm-4 5.5q-.625 0-1.062-.438Q4 17.125 4 16.5v-13q0-.625.438-1.062Q4.875 2 5.5 2H12l4 4v10.5q0 .625-.438 1.062Q15.125 18 14.5 18ZM11 7V3.5H5.5v13h9V7ZM5.5 3.5v3.938V3.5v13-13Z">
+                                    </path>
+                                </svg>
                             </div>
-                            <div class="col-md-10">
-                                <div id="allBrands">
-                                    <div class="marquee">
-                                        <div class="brandlogo">
-                                            <img src="assets/images/lyft.png" alt="" class="brandmainlogo">
-                                        </div>
-                                        <div class="brandlogo">
-                                            <img src="assets/images/microsoft.png" alt="" class="brandmainlogo">
-                                        </div>
-                                        <div class="brandlogo">
-                                            <img src="assets/images/netflix.png" alt="" class="brandmainlogo">
-                                        </div>
-                                        <div class="brandlogo">
-                                            <img src="assets/images/stripe.png" alt="" class="brandmainlogo">
-                                        </div>
-                                        <div class="brandlogo">
-                                            <img src="assets/images/tesla.png" alt="" class="brandmainlogo">
-                                        </div>
-                                        <div class="brandlogo">
-                                            <img src="assets/images/door.png" alt="" class="brandmainlogo">
-                                        </div>
-                                        <div class="brandlogo">
-                                            <img src="assets/images/netflix.png" alt="" class="brandmainlogo">
-                                        </div>
-                                        <div class="brandlogo">
-                                            <img src="assets/images/stripe.png" alt="" class="brandmainlogo">
-                                        </div>
-                                        <div class="brandlogo">
-                                            <img src="assets/images/microsoft.png" alt="" class="brandmainlogo">
-                                        </div>
-                                        <div class="brandlogo">
-                                            <img src="assets/images/netflix.png" alt="" class="brandmainlogo">
-                                        </div>
-                                    </div>
-                                </div>
+                            <p class="normText">Lorem</p>
+                        </a>
+
+                        <a href="/" class="menutabline">
+                            <div class="mobilemenuIcon">
+                                <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
+                                    <path
+                                        d="M6 7.5h8V6H6ZM6 14h6v-1.5H6Zm0-3.25h8v-1.5H6ZM4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3h11q.625 0 1.062.438Q17 3.875 17 4.5v11q0 .625-.438 1.062Q16.125 17 15.5 17Zm0-1.5h11v-11h-11v11Zm0-11v11-11Z">
+                                    </path>
+                                </svg>
                             </div>
-                        </div>
+                            <p class="normText">Lorem</p>
+                        </a>
+
+
+                        <a href="/" class="menutabline">
+                            <div class="mobilemenuIcon">
+                                <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
+                                    <path
+                                        d="M4.5 17q-.604 0-1.052-.448Q3 16.104 3 15.5v-11q0-.625.448-1.062Q3.896 3 4.5 3h11q.625 0 1.062.438Q17 3.875 17 4.5v11q0 .604-.438 1.052Q16.125 17 15.5 17Zm0-1.5h11v-3h-2.333q-.479.896-1.323 1.448Q11 14.5 10 14.5q-1.021 0-1.865-.542-.843-.541-1.302-1.458H4.5v3ZM10 13q.833 0 1.417-.583Q12 11.833 12 11h3.5V4.5h-11V11H8q0 .833.583 1.417Q9.167 13 10 13Zm0-2L7 8l1.062-1.062L9.25 8.125V5.5h1.5v2.625l1.188-1.187L13 8Zm-5.5 4.5h11Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <p class="normText">Lorem</p>
+                        </a>
+
+                        <a href="/" class="menutabline">
+                            <div class="mobilemenuIcon">
+                                <svg viewBox="0 0 20 20" focusable="false" class="chakra-icon css-vtd7lr">
+                                    <path
+                                        d="m8 13.5 5.5-3.5L8 6.5Zm2 4.5q-1.646 0-3.104-.625-1.458-.625-2.552-1.719t-1.719-2.552Q2 11.646 2 10q0-1.667.625-3.115.625-1.447 1.719-2.541Q5.438 3.25 6.896 2.625T10 2q1.667 0 3.115.625 1.447.625 2.541 1.719 1.094 1.094 1.719 2.541Q18 8.333 18 10q0 1.646-.625 3.104-.625 1.458-1.719 2.552t-2.541 1.719Q11.667 18 10 18Zm0-1.5q2.708 0 4.604-1.896T16.5 10q0-2.708-1.896-4.604T10 3.5q-2.708 0-4.604 1.896T3.5 10q0 2.708 1.896 4.604T10 16.5Zm0-6.5Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <p class="normText">Lorem</p>
+                        </a>
+
                     </div>
-
                 </div>
 
-            </div>
-            </div>
 
-        </div>
-
-
-
-
-
-
-
-
-        <div id="secondHolder">
-            <div class="second_bar">
-                <div class="row w-100">
-
-                <div class="col-md-4">
-                    <h1 class="users">20+</h1>
-                    <p class="usertitle">Rentals</p>
+                <div class="mbnavbartab">
+                    Listings
                 </div>
 
-                <div class="col-md-4">
-                    <h1 class="users">100+</h1>
-                    <p class="usertitle">5-star reviews</p>
-                </div>
-
-                <div class="col-md-4">
-                    <h1 class="users">Flexible</h1>
-                    <p class="usertitle">Maitnance scheduling</p>
-                </div>
-
-                </div>
-
-            </div>
-            <div class="bottom_date">
-                <p class="second_bottom_txt">* as of 12/07/2022</p>
+                <button class="btn btn-dark menugetstarted hiddenmenugetstarted">Login</button>
             </div>
         </div>
+    </nav>
 
-
-
-
-        <div id="experienceHolder">
-            <h1 class="exptext">
-                Title
-            </h1>
-            <button class="btn btn-dark getstarted">Get Started</button>
-
-            <div class="expcards row">
-
-                <div class="col-md-4 cradItem" data-aos="fade-up">
-                    <img src="" alt="" class="cardImg">
-                    <p class="serial">01</p>
-                    <p class="itemtitle">lorem ipsum</p>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, fugit voluptas a aspernatur
-                        praesentium voluptatibus aperiam ut quos nobis perspiciatis fugiat vel dolores veniam quibusdam
-                        deserunt possimus. Numquam, eligendi quod?
-                    </p>
-                </div>
-
-                <div class="col-md-4 cradItem" data-aos="fade-up">
-                    <img src="" alt="" class="cardImg">
-                    <p class="serial">02</p>
-                    <p class="itemtitle">Title</p>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta nihil soluta enim quisquam iusto
-                        dolorum similique numquam quae eum. Eaque animi asperiores quia aliquam libero tenetur quas
-                        saepe
-                        harum? Alias.
-                    </p>
-                </div>
-
-                <div class="col-md-4 cradItem" data-aos="fade-up">
-                    <img src="" alt="" class="cardImg">
-                    <p class="serial">03</p>
-                    <p class="itemtitle">Title</p>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quos maiores eaque, placeat ipsum
-                        eum
-                        illum? Quasi quos doloribus officia provident inventore iure, consequatur, sint obcaecati quae
-                        adipisci aspernatur atque.
-                    </p>
-                </div>
-
-
-            </div>
-
-
-            <button class="btn btn-dark getstarted mt-3 showOnMobile">Get Started</button>
+ <section class="main-section"
+<hr>
+    <div class="divider">
+        <div class="content">
+          <h2>Title Here</h2>
+          <p>Content Here</p>
         </div>
-
-
-
-
-
-
-        <div id="ratingsHolder">
-            <div class="allratings">
-
-                <div class="rating_tab">
-                    <div class="rating_contents">
-                        <div class="ratingTitle">
-                            lorem Ipsum Lorem Lorem Lorem
-                        </div>
-
-                        <div class="ratingparts">
-                            <div class="mainrating">
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                            </div>
-                            <div class="ratedByText">Review Section</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="rating_tab">
-                    <div class="rating_contents">
-                        <div class="ratingTitle">
-                            Review content about something cool regarding
-                        </div>
-
-                        <div class="ratingparts">
-                            <div class="mainrating">
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                            </div>
-                            <div class="ratedByText">Review Section</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="rating_tab">
-                    <div class="rating_contents">
-                        <div class="ratingTitle">
-                            Review content about something cool
-                        </div>
-
-                        <div class="ratingparts">
-                            <div class="mainrating">
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                            </div>
-                            <div class="ratedByText">Review Content</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="rating_tab">
-                    <div class="rating_contents">
-                        <div class="ratingTitle">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id iste at fuga cum facere commodi
-                            ipsum rem voluptates dicta ratione minus, esse placeat eius eaque! Quam neque ipsum officiis
-                            magni!
-                        </div>
-
-                        <div class="ratingparts">
-                            <div class="mainrating">
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                            </div>
-                            <div class="ratedByText">Review Content</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="rating_tab">
-                    <div class="rating_contents">
-                        <div class="ratingTitle">
-                            Review content about something cool
-                        </div>
-
-                        <div class="ratingparts">
-                            <div class="mainrating">
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                                <i class="fa fa-star staricon"></i>
-                            </div>
-                            <div class="ratedByText">Review content</div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <div class="dimReviewsTag">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quam tempora dolore nisi! Maxime
-                deserunt quam, ipsa, dolor nisi eligendi aliquid facilis iste neque, commodi laboriosam alias magni.
-                Reprehenderit, error!
-            </div>
-            <div id="prevNextBtns">
-
-                <button class="prevBtn" onclick="previous(this)" disabled="true">
-                    <svg viewBox="0 0 24 24" focusable="false" class="otm-icon css-blpcuq" stroke-width="2">
-                        <path d="M1.87402 12L20.874 12" stroke="currentColor" fill="none"></path>
-                        <path d="M13.5 19.5L21 12L13.5 4.5" stroke="currentColor" fill="none"></path>
-                    </svg>
-                </button>
-
-                <button class="nextBtn" onclick="next(this)">
-                    <svg viewBox="0 0 24 24" focusable="false" class="otm-icon css-blpcuq" stroke-width="2">
-                        <path d="M1.87402 12L20.874 12" stroke="currentColor" fill="none"></path>
-                        <path d="M13.5 19.5L21 12L13.5 4.5" stroke="currentColor" fill="none"></path>
-                    </svg>
-                </button>
-
-            </div>
+        <div class="image">
+          <img src="assets\images\october-update-poster.jpg" alt="Your Image Description Here">
         </div>
-
-
-
-
-
-
-
-
-
-
-        <div id="moreExperienceHolder">
-
-            <div class="textsHolder">
-                <h1 class="moreExpTitle">Title Placeholder</h1>
-
-                <p class="detailedText">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum esse exercitationem nemo aperiam
-                    corporis veritatis. Error eos voluptates, sint nemo nesciunt maiores tempora suscipit corrupti
-                    doloremque dolore odit, magnam officia?
-                    Corrupti quo id, molestias necessitatibus ut libero mollitia quos iusto in impedit inventore?
-                    Deleniti
-                    fuga commodi non perspiciatis temporibus ea. Optio aperiam at temporibus expedita quo harum nihil
-                    nulla
-                    veniam.
-                </p>
+      </div>
+    </hr>
+    <hr>
+        <div class="divider">
+            <div class="content">
+              <h2>Title Here</h2>
+              <p>Content Here</p>
             </div>
-
-            <div class="more_experiences">
-
-                <div class="experience_tab">
-                    <div class="icon">
-                        <svg viewBox="0 0 14 23" focusable="false" class="otm-icon iconSvg">
-                            <path
-                                d="M7.75039 10.0107C4.91289 9.27324 4.00039 8.51074 4.00039 7.32324C4.00039 5.96074 5.26289 5.01074 7.37539 5.01074C9.60039 5.01074 10.4254 6.07324 10.5004 7.63574H13.2629C13.1754 5.48574 11.8629 3.51074 9.25039 2.87324V0.135742H5.50039V2.83574C3.07539 3.36074 1.12539 4.93574 1.12539 7.34824C1.12539 10.2357 3.51289 11.6732 7.00039 12.5107C10.1254 13.2607 10.7504 14.3607 10.7504 15.5232C10.7504 16.3857 10.1379 17.7607 7.37539 17.7607C4.80039 17.7607 3.78789 16.6107 3.65039 15.1357H0.900391C1.05039 17.8732 3.10039 19.4107 5.50039 19.9232V22.6357H9.25039V19.9482C11.6879 19.4857 13.6254 18.0732 13.6254 15.5107C13.6254 11.9607 10.5879 10.7482 7.75039 10.0107Z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </div>
-                    <div class="exptitle">
-                        Box 1
-                    </div>
-                    <div class="expLongText">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi distinctio iste accusantium!
-                        Voluptate veritatis nihil ipsam quasi neque tempore beatae corporis nostrum repudiandae,
-                        exercitationem molestiae, mollitia dolore perspiciatis soluta quae.
-                    </div>
-                </div>
-
-
-                <div class="experience_tab">
-                    <div class="icon">
-                        <svg viewBox="0 0 28 25" focusable="false" class="otm-icon iconSvg">
-                            <path
-                                d="M18.6667 12.3857C18.6667 10.9191 17.4667 9.71908 16 9.71908C14.5333 9.71908 13.3333 10.9191 13.3333 12.3857C13.3333 13.8524 14.5333 15.0524 16 15.0524C17.4667 15.0524 18.6667 13.8524 18.6667 12.3857ZM16 0.385742C9.37333 0.385742 4 5.75908 4 12.3857H0L5.33333 17.7191L10.6667 12.3857H6.66667C6.66667 7.22574 10.84 3.05241 16 3.05241C21.16 3.05241 25.3333 7.22574 25.3333 12.3857C25.3333 17.5457 21.16 21.7191 16 21.7191C13.9867 21.7191 12.12 21.0657 10.5867 19.9857L8.69333 21.9057C10.72 23.4524 13.2533 24.3857 16 24.3857C22.6267 24.3857 28 19.0124 28 12.3857C28 5.75908 22.6267 0.385742 16 0.385742Z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </div>
-                    <div class="exptitle">
-                        Box 2
-                    </div>
-                    <div class="expLongText">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam blanditiis nihil dolor at, unde
-                        hic
-                        ipsa ex similique tempore provident eum, quia, temporibus neque error a perferendis. Dolores, et
-                        libero!
-                    </div>
-                </div>
-
-
-                <div class="experience_tab">
-                    <div class="icon">
-                        <svg viewBox="0 0 26 26" focusable="false" class="otm-icon iconSvg">
-                            <path
-                                d="M14.25 4.73574C18.075 5.28574 21.1 8.31074 21.65 12.1357H25.4375C24.85 6.23574 20.15 1.53574 14.25 0.948242V4.73574ZM21.65 14.6357C21.1 18.4607 18.075 21.4857 14.25 22.0357V25.8232C20.15 25.2357 24.85 20.5357 25.4375 14.6357H21.65ZM11.75 22.0357C7.5125 21.4232 4.25 17.7857 4.25 13.3857C4.25 8.98574 7.5125 5.34824 11.75 4.73574V0.948242C5.4375 1.57324 0.5 6.89824 0.5 13.3857C0.5 19.8732 5.4375 25.1982 11.75 25.8232V22.0357Z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </div>
-                    <div class="exptitle">
-                        Box 3
-                    </div>
-                    <div class="expLongText">
-                        lorem
-                    </div>
-                </div>
-
-
-                <div class="experience_tab">
-                    <div class="icon">
-                        <svg viewBox="0 0 26 26" focusable="false" class="otm-icon iconSvg">
-                            <path
-                                d="M23 0.885742H3C1.625 0.885742 0.5 2.01074 0.5 3.38574V25.8857L5.5 20.8857H23C24.375 20.8857 25.5 19.7607 25.5 18.3857V3.38574C25.5 2.01074 24.375 0.885742 23 0.885742ZM23 18.3857H5.5L3 20.8857V3.38574H23V18.3857Z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </div>
-                    <div class="exptitle">
-                        Box 4
-                    </div>
-                    <div class="expLongText">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia delectus, accusamus, rem
-                        obcaecati
-                        in iure quae veritatis, voluptate deserunt ipsum corporis? Quasi quis expedita quos itaque nisi
-                        similique. Labore, asperiores.
-                    </div>
-                </div>
-
-
-                <div class="experience_tab">
-                    <div class="icon">
-                        <svg viewBox="0 0 26 26" focusable="false" class="otm-icon iconSvg">
-                            <path
-                                d="M11.666 14.7189C11.666 15.6389 10.9193 16.3856 9.99935 16.3856C9.07935 16.3856 8.33268 15.6389 8.33268 14.7189C8.33268 13.7989 9.07935 13.0522 9.99935 13.0522C10.9193 13.0522 11.666 13.7989 11.666 14.7189ZM17.9993 13.0522C17.0793 13.0522 16.3327 13.7989 16.3327 14.7189C16.3327 15.6389 17.0793 16.3856 17.9993 16.3856C18.9193 16.3856 19.666 15.6389 19.666 14.7189C19.666 13.7989 18.9193 13.0522 17.9993 13.0522ZM27.3327 13.3856C27.3327 20.7456 21.3594 26.7189 13.9993 26.7189C6.63935 26.7189 0.666016 20.7456 0.666016 13.3856C0.666016 6.02558 6.63935 0.0522461 13.9993 0.0522461C21.3594 0.0522461 27.3327 6.02558 27.3327 13.3856ZM12.2127 2.87891C14.0793 5.97225 17.466 8.05225 21.3327 8.05225C21.946 8.05225 22.546 7.98558 23.1194 7.89225C21.2527 4.79891 17.866 2.71891 13.9993 2.71891C13.386 2.71891 12.786 2.78558 12.2127 2.87891ZM3.89268 10.0122C6.17268 8.71891 7.93268 6.61225 8.77268 4.09225C6.49268 5.38558 4.73268 7.49225 3.89268 10.0122ZM24.666 13.3856C24.666 12.3456 24.506 11.3456 24.226 10.3989C23.2927 10.5989 22.3327 10.7189 21.3327 10.7189C17.1593 10.7189 13.4393 8.79891 10.986 5.79891C9.58602 9.21225 6.79935 11.8922 3.33268 13.1989C3.34602 13.2522 3.33268 13.3189 3.33268 13.3856C3.33268 19.2656 8.11935 24.0522 13.9993 24.0522C19.8793 24.0522 24.666 19.2656 24.666 13.3856Z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </div>
-                    <div class="exptitle">
-                        Box 5
-                    </div>
-                    <div class="expLongText">
-                        lorem
-                    </div>
-                </div>
-
-
-                <div class="experience_tab">
-                    <div class="icon">
-                        <svg viewBox="0 0 26 26" focusable="false" class="otm-icon iconSvg">
-                            <path
-                                d="M17.5 9.62109H16.25V7.12109C16.25 3.67109 13.45 0.871094 10 0.871094C6.55 0.871094 3.75 3.67109 3.75 7.12109V9.62109H2.5C1.125 9.62109 0 10.7461 0 12.1211V24.6211C0 25.9961 1.125 27.1211 2.5 27.1211H17.5C18.875 27.1211 20 25.9961 20 24.6211V12.1211C20 10.7461 18.875 9.62109 17.5 9.62109ZM6.25 7.12109C6.25 5.04609 7.925 3.37109 10 3.37109C12.075 3.37109 13.75 5.04609 13.75 7.12109V9.62109H6.25V7.12109ZM17.5 24.6211H2.5V12.1211H17.5V24.6211ZM10 20.8711C11.375 20.8711 12.5 19.7461 12.5 18.3711C12.5 16.9961 11.375 15.8711 10 15.8711C8.625 15.8711 7.5 16.9961 7.5 18.3711C7.5 19.7461 8.625 20.8711 10 20.8711Z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </div>
-                    <div class="exptitle">
-                        Box 6
-                    </div>
-                    <div class="expLongText">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium officia temporibus beatae
-                        unde,
-                        a nulla vitae labore quis mollitia voluptatibus cum sequi quaerat quidem dolores adipisci vero
-                        autem
-                        et numquam!
-                    </div>
-                </div>
-
+            <div class="image">
+              <img src="assets\images\october-update-poster.jpg" alt="Your Image Description Here">
             </div>
+          </div>
+        </hr>
+     </section>
 
+
+<div id="footerHolder">
+    <div class="row footer_part">
+        <div class="col-md-4">
+            <img src="assets/images/logo.png" alt="" class="logoImg">
         </div>
+        <div class="col-md-8">
 
-
-
-
-        <div id="investingTeamHolder">
             <div class="row">
 
-                <div class="col-md-6">
-                    <h1 class="investingTitle">Your team</h1>
-                </div>
-
-                <div class="col-md-6">
-                    <p class="investingDesc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, id
-                        molestias? Aliquid dolorem excepturi dolore deleniti iusto? Maiores similique vitae rem tempore
-                        corporis enim, soluta sequi iusto, illo, magnam libero.
-                        Facilis ratione veritatis quas iste obcaecati facere nemo animi dolorum dolor magni veniam
-                        tempora
-                        totam dolore quod error, labore earum ex? Omnis maxime, dolor magnam ducimus ipsam labore dolore
-                        quisquam.</p>
-                </div>
-            </div>
-
-
-            <div class="expcards row investing">
-
-                <div class="col-md-4 cradItem">
-
-                    <div class="videoHolder" onclick="startVideo(this)">
-                        <video class="w-100 cardVideo d-none" playsinline="" src="assets/images/october-update.mp4"
-                            type="video/mp4">
-                        </video>
-                        <img src="" alt="" class="cardImg">
-
-                        <div class="pauseHolder">
-                            <div class="pause">
-                                <svg viewBox="0 0 24 24" focusable="false" class="svgPause">
-                                    <path d="M18 12L9 17.1962L9 6.80385L18 12Z" fill="currentColor"></path>
-                                </svg>
-                            </div>
-                        </div>
-
+                <div class="col-6 col-md-4 my-2">
+                    <div class="footTypeHead">
+                        Links
                     </div>
-
-                    <p class="investingtitle">Lorem Ipsum</p>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id molestiae natus eius alias amet aut
-                        quod
-                        repellendus excepturi facere sed dolorem nobis sunt mollitia dolore minus optio facilis, nisi
-                        veniam.
-                    </p>
+                    <a href="/" class="linksName">Lorem Ipsum</a>
+                    <a href="/" class="linksName"> lorem </a>
+                    <a href="/" class="linksName"> lorem </a>
+                    <a href="/" class="linksName"> lorem </a>
+                    <a href="/" class="linksName"> lorem </a>
+                    <a href="/" class="linksName"> lorem</a>
                 </div>
 
-                <div class="col-md-4 cradItem">
 
-                    <div class="videoHolder" onclick="startVideo(this)">
-                        <video class="w-100 cardVideo d-none" playsinline="" src="assets/images/asset-classes.mp4"
-                            type="video/mp4">
-                        </video>
-                        <img src="" alt="" class="cardImg">
-
-                        <div class="pauseHolder">
-                            <div class="pause">
-                                <svg viewBox="0 0 24 24" focusable="false" class="svgPause">
-                                    <path d="M18 12L9 17.1962L9 6.80385L18 12Z" fill="currentColor"></path>
-                                </svg>
-                            </div>
-                        </div>
-
+                <div class="col-6 col-md-4 my-2">
+                    <div class="footTypeHead">
+                        Links
                     </div>
-
-                    <p class="investingtitle">Lorem Ipsum</p>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi perferendis itaque illum
-                        repellendus
-                        ad facere nesciunt iure in incidunt tempore, ut mollitia quod, optio tempora sint, numquam enim
-                        voluptate velit.
-                    </p>
+                    <a href="/" class="linksName">Lorem Ispum</a>
+                    <a href="/" class="linksName">lorem </a>
+                    <a href="/" class="linksName"> lorem </a>
+                    <a href="/" class="linksName"> lorem </a>
+                    <a href="/" class="linksName"> lorem </a>
+                    <a href="/" class="linksName"> lorem</a>
                 </div>
 
-                <div class="col-md-4 cradItem">
 
-                    <div class="videoHolder" onclick="startVideo(this)">
-                        <video class="w-100 cardVideo d-none" playsinline="" src="assets/images/kim-k.mp4"
-                            type="video/mp4">
-                        </video>
-                        <img src="" alt="" class="cardImg">
-
-                        <div class="pauseHolder">
-                            <div class="pause">
-                                <svg viewBox="0 0 24 24" focusable="false" class="svgPause">
-                                    <path d="M18 12L9 17.1962L9 6.80385L18 12Z" fill="currentColor"></path>
-                                </svg>
-                            </div>
-                        </div>
-
+                <div class="col-6 col-md-4 my-2">
+                    <div class="footTypeHead">
+                        Links
                     </div>
-
-                    <p class="investingtitle">Lorem Ipsum</p>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In praesentium voluptatibus vel ab ipsa
-                        quaerat modi. Aspernatur, voluptatem nulla rem dolores saepe optio fuga aliquid labore rerum.
-                        Nobis,
-                        aliquam adipisci.
-                    </p>
+                    <a href="/" class="linksName">Lorem Ispum</a>
+                    <a href="/" class="linksName">lorem </a>
+                    <a href="/" class="linksName"> lorem </a>
+                    <a href="/" class="linksName"> lorem </a>
+                    <a href="/" class="linksName"> lorem </a>
+                    <a href="/" class="linksName"> lorem</a>
                 </div>
 
             </div>
+
 
         </div>
 
+        <div class="linethrough"></div>
 
 
-
-
-
-
-
-        <div id="accordionHolder">
-            <div class="row">
-                <div class="col-md-3">
-                    <h1 class="detailtitle">Need more details?</h1>
-                </div>
-
-                <div class="col-md-9">
-
-                    <div class="accordionHolder">
-
-                        <div class="accordiontab">
-
-                            <div class="accTitleBar">
-                                <div class="acctitle">
-                                    Question 1
-                                </div>
-                                <div class="accIcon">
-                                    +
-                                </div>
-                            </div>
-
-                            <div class="accAnswer">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maiores laborum, sapiente
-                                porro at id facilis voluptatum soluta rerum. Ipsa eaque cum, eveniet quidem provident
-                                dicta?
-                                Voluptatum illum exercitationem perspiciatis?
-                            </div>
-
-                        </div>
-
-                        <div class="accordiontab">
-
-                            <div class="accTitleBar">
-                                <div class="acctitle">
-                                    Question 2
-                                </div>
-                                <div class="accIcon">
-                                    +
-                                </div>
-                            </div>
-
-                            <div class="accAnswer">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cum iste cupiditate sequi
-                                distinctio voluptate deserunt hic. Nemo ea quisquam eius odit asperiores! Voluptatem
-                                dolor,
-                                ullam rerum molestias culpa perferendis.
-                                Rerum minus dolorem dolore! Corporis minus, voluptas aliquam dolor fugiat veritatis
-                                nostrum
-                                eligendi temporibus quae suscipit eum laboriosam voluptatum facilis incidunt molestias
-                                porro. Eaque dolor nobis expedita adipisci repellat impedit.
-                            </div>
-
-                        </div>
-
-                        <div class="accordiontab">
-
-                            <div class="accTitleBar">
-                                <div class="acctitle">
-                                    Question 3
-                                </div>
-                                <div class="accIcon">
-                                    +
-                                </div>
-                            </div>
-
-                            <div class="accAnswer">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo quis sapiente
-                                eligendi
-                                accusamus. Porro assumenda numquam earum! Unde quod possimus praesentium voluptas
-                                eveniet
-                                facilis similique nobis, quas laudantium delectus maiores!
-                                Alias eveniet aliquid quo sed veritatis iure nam non fugiat provident, deleniti corporis
-                                omnis dolorum optio labore incidunt possimus aut minus dolore doloremque maxime
-                                voluptatum
-                                consectetur magni quidem sit! Corrupti.
-                                Impedit ratione odit esse ut, natus, dolores deleniti amet quaerat repellendus labore
-                                libero
-                                provident perferendis dolore earum, culpa molestias ab! Fuga tempora inventore
-                                consequuntur
-                                error quod maiores magni architecto aut.
-
-                                <p class="mutedtexts">
-                                    <small>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita porro maxime
-                                        similique voluptate, illo, dolorum suscipit nesciunt adipisci asperiores ut
-                                        consequatur eveniet non corrupti odit eaque ab necessitatibus aut corporis?
-                                    </small>
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-
-            </div>
+        <div class="socialLinks">
+            <a href=" /" class="fa fa-instagram text-light mr-3"></a>
+            <a href="/" class="fa fa-twitter text-light mr-3"></a>
+            <a href="/" class="fa fa-linkedin text-light mr-3"></a>
+            <a href="/" class="fa fa-youtube text-light mr-3"></a>
         </div>
 
-
-
-
-
-
-
-        <div id="footerHolder">
-            <div class="row footer_part">
-                <div class="col-md-4">
-                    <img src="assets/images/logo.png" alt="" class="logoImg">
-                </div>
-                <div class="col-md-8">
-
-                    <div class="row">
-
-                        <div class="col-6 col-md-4 my-2">
-                            <div class="footTypeHead">
-                                Links
-                            </div>
-                            <a href="/" class="linksName">Lorem Ipsum</a>
-                            <a href="/" class="linksName"> lorem </a>
-                            <a href="/" class="linksName"> lorem </a>
-                            <a href="/" class="linksName"> lorem </a>
-                            <a href="/" class="linksName"> lorem </a>
-                            <a href="/" class="linksName"> lorem</a>
-                        </div>
-
-
-                        <div class="col-6 col-md-4 my-2">
-                            <div class="footTypeHead">
-                                Links
-                            </div>
-                            <a href="/" class="linksName">Lorem Ispum</a>
-                            <a href="/" class="linksName">lorem </a>
-                            <a href="/" class="linksName"> lorem </a>
-                            <a href="/" class="linksName"> lorem </a>
-                            <a href="/" class="linksName"> lorem </a>
-                            <a href="/" class="linksName"> lorem</a>
-                        </div>
-
-
-                        <div class="col-6 col-md-4 my-2">
-                            <div class="footTypeHead">
-                                Links
-                            </div>
-                            <a href="/" class="linksName">Lorem Ispum</a>
-                            <a href="/" class="linksName">lorem </a>
-                            <a href="/" class="linksName"> lorem </a>
-                            <a href="/" class="linksName"> lorem </a>
-                            <a href="/" class="linksName"> lorem </a>
-                            <a href="/" class="linksName"> lorem</a>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-                <div class="linethrough"></div>
-
-
-                <div class="socialLinks">
-                    <a href=" /" class="fa fa-instagram text-light mr-3"></a>
-                    <a href="/" class="fa fa-twitter text-light mr-3"></a>
-                    <a href="/" class="fa fa-linkedin text-light mr-3"></a>
-                    <a href="/" class="fa fa-youtube text-light mr-3"></a>
-                </div>
-
-                <div class="copyrightTexts">
-                    © Copyright 2023
-                    <br>
-                    <div class="d-flex">
-                        <a href="/" class="linksName footerLink">Legal </a>
-                        <a href="/" class="linksName footerLink">Privacy </a>
-                        <a href="/" class="linksName footerLink">Terms </a>
-                    </div>
-                    <br>
-                    <br>
-
-
-                </div>
-
+        <div class="copyrightTexts">
+            © Copyright 2023
+            <br>
+            <div class="d-flex">
+                <a href="/" class="linksName footerLink">Legal </a>
+                <a href="/" class="linksName footerLink">Privacy </a>
+                <a href="/" class="linksName footerLink">Terms </a>
             </div>
+            <br>
+            <br>
+
+
         </div>
 
+    </div>
+</div>
 
 
 
@@ -1200,46 +500,56 @@
 
 
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-            integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-            crossorigin="anonymous"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
-            integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
 
-        <script src="assets/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+    integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <script>
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 20,
-                center: true,
-                nav: true,
-                dots: false,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 2
-                    },
-                    1000: {
-                        items: 3
-                    }
-                }
-            });
+<script src="assets/js/script.js"></script>
+
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        center: true,
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
 
 
 
-            AOS.init({
-                duration: 1200,
-            })
+    AOS.init({
+        duration: 1200,
+    })
 
-        </script>
+</script>
 </body>
 
+</html>
+                        
+
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
 </html>
