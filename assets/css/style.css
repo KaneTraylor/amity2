@@ -1239,7 +1239,7 @@ button[disabled] svg {
 .container-hero {
     padding: 3px 5px;
     border: 1px solid #000000;
-    box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
     background-color: #098f2b;
     overflow: hidden;
     z-index: 1;
@@ -1250,7 +1250,7 @@ button[disabled] svg {
     padding: 25px;
     width: auto;
     border: 1px solid #000000;
-    box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
     background-color: #ffffff;
     overflow: hidden;
     z-index: 1;
@@ -2228,4 +2228,14 @@ button[disabled] svg {
     .mobileNav {
         display: block;
     }
+}
+
+.link_Button {
+    position: relative;
+
+}
+
+.button_Title {
+    display: flex;
+    justify-content: center;
 }
