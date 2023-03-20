@@ -6,6 +6,15 @@
     margin-bottom: 105px;
 }
 
+.section-title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    margin-top: 150px;
+    justify-content: center;
+
+}
+
 
 .divider {
     display: flex;
@@ -24,7 +33,7 @@
   
   .image {
     flex-basis: 30%;
-    width: 50%;
+    width: 100%;
   }
   
   
@@ -33,6 +42,21 @@
     height: auto;
     border-radius: 4px;
   }
+  
+@media only screen and (max-width: 600px) {
+  .divider {
+    flex-direction: column;
+  }
+  
+  .content, .image {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  
+  .image img {
+    max-height: 200px; /* Change the maximum height of the image for small screens */
+  }
+}
 
   @font-face {
     font-family: Roobert;
