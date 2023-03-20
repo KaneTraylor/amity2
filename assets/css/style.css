@@ -1235,6 +1235,16 @@ button[disabled] svg {
     overflow: hidden;
 }
 
+.container-hero {
+    padding: 3px;
+    border: 1px solid #000000;
+    box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.75);
+    background-color: #098f2b;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
 .marquee {
     display: flex;
     position: relative;
@@ -1320,7 +1330,7 @@ button[disabled] svg {
 }
 
 .titansmallDesc {
-    color: #616267;
+    color: #ffffff;
     max-width: 540px;
     font-size: 1.2rem;
     margin: 2rem 0px;
