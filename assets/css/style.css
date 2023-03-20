@@ -1231,7 +1231,7 @@ button[disabled] svg {
 .container {
     padding: 3px;
     border: 1px solid #e6e6e6;
-    width: 700px;
+    width: 850px;
     overflow: hidden;
 }
 
@@ -1326,7 +1326,7 @@ button[disabled] svg {
 .titantexts {
     font-size: 3.5rem;
     line-height: 3.5rem;
-    margin-top: 4.5rem;
+    margin-top: 5.5rem;
 }
 
 .titansmallDesc {
@@ -1354,7 +1354,7 @@ button[disabled] svg {
 }
 
 .dimlink {
-    color: #98969E;
+    color: #ffffff;
     text-decoration: underline;
 }
 
@@ -1389,14 +1389,14 @@ button[disabled] svg {
 }
 
 .smallestDimTexts {
-    color: #98969e;
+    color: #ffffff;
     font-size: 12px;
 }
 
 .smallBar {
     height: 2px;
     width: 60px;
-    background: #456bf2;
+    background: #52b923;
     margin-top: 30px;
     margin-bottom: 30px;
 }
