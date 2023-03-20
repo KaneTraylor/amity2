@@ -4,7 +4,90 @@
     margin-right: 10%;
     margin-top: 105px;
     margin-bottom: 105px;
+    overflow: hidden;
 }
+  
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel-wrapper {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+  }
+  
+  .carousel-slide .divider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .carousel-slide .content {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .carousel-slide .image {
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .carousel-slide .image img {
+    width: 100%;
+  }
+  
+  .carousel-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    }
+    
+    .carousel-nav button {
+    background-color: #ddd;
+    border: none;
+    color: #333;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    .carousel-nav button:hover {
+    background-color: #bbb;
+    }
+    
+    .carousel-slide {
+    display: none;
+    }
+    
+    .carousel-slide.active-slide {
+    display: block;
+    }
+  
+  
+  .listing {
+    flex-shrink: 0;
+    width: 100vw;
+  }
 
 .section-title {
     display: flex;
@@ -42,22 +125,33 @@
     height: auto;
     border-radius: 4px;
   }
-  
-@media only screen and (max-width: 600px) {
-  .divider {
-    flex-direction: column;
-  }
-  
-  .content, .image {
-    flex-basis: 100%;
-    text-align: center;
-  }
-  
-  .image img {
-    max-height: 200px; /* Change the maximum height of the image for small screens */
-  }
-}
 
+  @media only screen and (max-width: 600px) {
+    .divider {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .content {
+      width: 100%;
+      justify-content: left;
+    }
+    
+    .image {
+      width: 100%;
+    }
+    
+    .property-details {
+      margin-left: 0;
+      padding-left: 0;
+    }
+    
+    .button {
+      margin-top: 1rem;
+      margin-right: 3.5rem;
+    }
+  }
+  
   @font-face {
     font-family: Roobert;
     src: url(https://s3.amazonaws.com/cdn.titanvest.com/fonts/Roobert/Roobert-Light.otf) format("opentype");

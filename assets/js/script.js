@@ -176,17 +176,41 @@ function showPie(passedThis) {
 }
 
 
+// Initialize variables
+var slideIndex = 0;
+var slides = document.getElementsByClassName("carousel-slide");
 
+// Show the first slide
+showSlide(slideIndex);
 
+// Next/previous button event listeners
+document.querySelector(".prev-btn").addEventListener("click", function () {
+  changeSlide(-1);
+});
+document.querySelector(".next-btn").addEventListener("click", function () {
+  changeSlide(1);
+});
 
-
-
-function showSidebar(passedThis) {
-    $(".sidemenuHolder").addClass("leftZero");
-    $(".sideMenuHidden").addClass("leftZero");
+// Function to show a slide
+function showSlide(n) {
+  var i;
+  // If the slide index is greater than the total number of slides, go back to the first slide
+  if (n >= slides.length) {
+    slideIndex = 0;
+  }
+  // If the slide index is less than zero, go to the last slide
+  if (n < 0) {
+    slideIndex = slides.length - 1;
+  }
+  // Hide all slides
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+  // Show the current slide
+  slides[slideIndex].style.display = 'block';
 }
 
-function crossMenu(passedThis) {
-    $(".sidemenuHolder").removeClass("leftZero");
-    $(".sideMenuHidden").removeClass("leftZero");
+// Function to change the slide
+function changeSlide(n) {
+  showSlide(slideIndex += n);
 }
