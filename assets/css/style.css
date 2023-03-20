@@ -93,9 +93,10 @@ span {
     margin: 120px 50px;
     position: relative;
     margin-top: -2rem;
-    padding-left: 300px;
-    padding-right: 300px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
+
 
 
 #footerHolder {
@@ -1236,7 +1237,7 @@ button[disabled] svg {
 }
 
 .container-hero {
-    padding: 3px;
+    padding: 3px 5px;
     border: 1px solid #000000;
     box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.75);
     background-color: #098f2b;
@@ -1377,6 +1378,7 @@ button[disabled] svg {
     letter-spacing: 0em;
     color: #1d1e21;
     margin-top: 5px;
+    margin-right: 19px;
 }
 
 .specmt {
@@ -1385,6 +1387,7 @@ button[disabled] svg {
 
 .main_icon {
     font-size: 20px;
+    margin-right: 15px;
 }
 
 .starSvgIcon {
@@ -2036,7 +2039,7 @@ button[disabled] svg {
     }
 
     .iconictabs {
-        margin-bottom: 10px;
+        margin-bottom: 35px;
     }
 
     .mobileStructure {
