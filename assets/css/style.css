@@ -1286,7 +1286,8 @@ button[disabled] svg {
 .mainsection {
     padding: 100px 50px;
     width: 100%;
-    padding-bottom: 12rem;
+    margin-left: 3px;
+    padding-bottom: 1rem;
 }
 
 .shieldIcon {
@@ -2022,7 +2023,7 @@ button[disabled] svg {
     #secondHolder {
         top: -3rem;
         margin: unset;
-        padding-top: 25px;
+        padding-top: 0px;
         border-radius: 0px;
     }
 
