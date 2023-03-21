@@ -107,6 +107,49 @@ span {
     font-family: 'Inter', sans-serif;
 }
 
+.hover-effect {
+    transition: transform 0.3s;
+  }
+  
+  .hover-effect:hover {
+    transform: scale(1.05);
+  }
+
+  .cradItem-container {
+    padding: 3px;
+    border: 1px solid #e6e6e6;
+    width: auto;
+    background-color: #1a1a1a;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 255px;
+    gap: 20px; /* Adjust the gap between the cradItem elements */
+  }
+
+  @media screen and (min-width: 768px) {
+
+    .cradItem-container {
+
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .cradItem{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+  }
+
+  .cradbtn {
+    padding: 10px 35px;
+    background: #ffffff;
+    border-radius: 7px;
+    position: absolute;
+    color: #000000;
+    right: 0px;
+    top: 2rem;
+    font-size: 1.2rem;
+}
+
 .linksName {
     color: #c5c5c5;
     font-weight: 500;
@@ -144,7 +187,7 @@ span {
     width: 310px;
     height: 620px;
     padding: 15px;
-    border-radius: 22px;
+    border-radius: 22px;serial
     overflow: hidden;
 }
 
@@ -209,7 +252,7 @@ span {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0em;
-    color: #446CF9;
+    color: #36991e;
 }
 
 .itemtitle {
@@ -218,7 +261,7 @@ span {
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0em;
-    color: #222222;
+    color: #ffffff;
 }
 
 /* Roobert */
@@ -229,7 +272,7 @@ span {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: -0.1px;
-    color: #636468;
+    color: #ffffff;
 }
 
 
@@ -1259,6 +1302,17 @@ button[disabled] svg {
 
 }
 
+@media screen and (max-width: 768px) {
+
+    .container-hero2 {
+        background-color: #ffffff;
+        overflow: hidden;
+        z-index: 1;
+        height: 110px;
+    
+    }
+}
+
 .marquee {
     display: flex;
     position: relative;
@@ -1341,6 +1395,7 @@ button[disabled] svg {
     font-size: 3.5rem;
     line-height: 3.5rem;
     margin-top: 5.5rem;
+    font-weight: 500;
     color: #ffffff;
 }
 

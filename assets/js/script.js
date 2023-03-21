@@ -175,6 +175,22 @@ function showPie(passedThis) {
     }
 }
 
+
+
+
+
+
+
+function showSidebar(passedThis) {
+    $(".sidemenuHolder").addClass("leftZero");
+    $(".sideMenuHidden").addClass("leftZero");
+}
+
+function crossMenu(passedThis) {
+    $(".sidemenuHolder").removeClass("leftZero");
+    $(".sideMenuHidden").removeClass("leftZero");
+}
+
 function initCarousel(carouselClass, prevBtnClass, nextBtnClass) {
     var slideIndex = 0;
     var carousel = document.querySelector(carouselClass);
