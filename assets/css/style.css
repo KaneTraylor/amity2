@@ -1302,6 +1302,17 @@ button[disabled] svg {
 
 }
 
+@media screen and (max-width: 768px) {
+
+    .container-hero2 {
+        background-color: #ffffff;
+        overflow: hidden;
+        z-index: 1;
+        height: 110px;
+    
+    }
+}
+
 .marquee {
     display: flex;
     position: relative;
