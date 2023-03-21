@@ -100,7 +100,7 @@ span {
 
 
 #footerHolder {
-    padding: 130px 50px;
+    padding: 80px 50px;
     background: #1a1a1a;
     color: #fff;
     font-weight: 700;
@@ -109,13 +109,13 @@ span {
 
 .hover-effect {
     transition: transform 0.3s;
-  }
-  
-  .hover-effect:hover {
-    transform: scale(1.05);
-  }
+}
 
-  .cradItem-container {
+.hover-effect:hover {
+    transform: scale(1.05);
+}
+
+.cradItem-container {
     padding: 3px;
     border: 1px solid #e6e6e6;
     width: auto;
@@ -123,23 +123,25 @@ span {
     overflow: hidden;
     border-radius: 15px;
     height: 255px;
-    gap: 20px; /* Adjust the gap between the cradItem elements */
-  }
+    gap: 20px;
+    /* Adjust the gap between the cradItem elements */
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     .cradItem-container {
 
         margin-top: 100px;
         margin-bottom: 50px;
     }
-    .cradItem{
+
+    .cradItem {
         margin-top: 50px;
         margin-bottom: 50px;
     }
-  }
+}
 
-  .cradbtn {
+.cradbtn {
     padding: 10px 35px;
     background: #ffffff;
     border-radius: 7px;
@@ -187,8 +189,8 @@ span {
     width: 310px;
     height: 620px;
     padding: 15px;
-    border-radius: 22px;serial
-    overflow: hidden;
+    border-radius: 22px;
+    serial overflow: hidden;
 }
 
 .main_video {
@@ -1309,7 +1311,7 @@ button[disabled] svg {
         overflow: hidden;
         z-index: 1;
         height: 110px;
-    
+
     }
 }
 
