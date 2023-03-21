@@ -126,6 +126,19 @@ span {
     gap: 20px; /* Adjust the gap between the cradItem elements */
   }
 
+  @media screen and (min-width: 768px) {
+
+    .cradItem-container {
+
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .cradItem{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+  }
+
   .cradbtn {
     padding: 10px 35px;
     background: #ffffff;
@@ -1371,6 +1384,7 @@ button[disabled] svg {
     font-size: 3.5rem;
     line-height: 3.5rem;
     margin-top: 5.5rem;
+    font-weight: 500;
     color: #ffffff;
 }
 
