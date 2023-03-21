@@ -1251,7 +1251,7 @@ button[disabled] svg {
 .container-hero2 {
     padding: 25px;
     width: auto;
-    border-radius: 25px;
+    border-radius: 15px;
     box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
     background-color: #ffffff;
     overflow: hidden;
