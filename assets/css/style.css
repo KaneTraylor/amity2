@@ -1303,7 +1303,7 @@ button[disabled] svg {
     background-image: url("assets/images/herobackground.png");
     background-size: cover;
     background-position: center center;
-    height: 100%;
+    height: 1000px;
 }
 
 .mainsection {
