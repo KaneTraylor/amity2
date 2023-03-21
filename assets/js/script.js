@@ -175,42 +175,40 @@ function showPie(passedThis) {
     }
 }
 
-
-// Initialize variables
-var slideIndex = 0;
-var slides = document.getElementsByClassName("carousel-slide");
-
-// Show the first slide
-showSlide(slideIndex);
-
-// Next/previous button event listeners
-document.querySelector(".prev-btn").addEventListener("click", function () {
-  changeSlide(-1);
-});
-document.querySelector(".next-btn").addEventListener("click", function () {
-  changeSlide(1);
-});
-
-// Function to show a slide
-function showSlide(n) {
-  var i;
-  // If the slide index is greater than the total number of slides, go back to the first slide
-  if (n >= slides.length) {
-    slideIndex = 0;
+function initCarousel(carouselClass, prevBtnClass, nextBtnClass) {
+    var slideIndex = 0;
+    var carousel = document.querySelector(carouselClass);
+    var slides = carousel.getElementsByClassName("carousel-slide");
+    var prevBtn = document.querySelector(prevBtnClass);
+    var nextBtn = document.querySelector(nextBtnClass);
+  
+    showSlide(slideIndex);
+  
+    prevBtn.addEventListener("click", function () {
+      changeSlide(-1);
+    });
+    nextBtn.addEventListener("click", function () {
+      changeSlide(1);
+    });
+  
+    function showSlide(n) {
+      var i;
+      if (n >= slides.length) {
+        slideIndex = 0;
+      }
+      if (n < 0) {
+        slideIndex = slides.length - 1;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+      slides[slideIndex].style.display = 'block';
+    }
+  
+    function changeSlide(n) {
+      showSlide(slideIndex += n);
+    }
   }
-  // If the slide index is less than zero, go to the last slide
-  if (n < 0) {
-    slideIndex = slides.length - 1;
-  }
-  // Hide all slides
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-  // Show the current slide
-  slides[slideIndex].style.display = 'block';
-}
-
-// Function to change the slide
-function changeSlide(n) {
-  showSlide(slideIndex += n);
-}
+  
+  initCarousel('.carousel-1', '.carousel-1-prev', '.carousel-1-next');
+  initCarousel('.carousel-2', '.carousel-2-prev', '.carousel-2-next');

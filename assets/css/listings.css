@@ -76,13 +76,13 @@
     }
     
     .carousel-slide {
-    display: none;
+      display: none; /* block level element for desktop */
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      width: 100%;
     }
-    
-    .carousel-slide.active-slide {
-    display: block;
-    }
-  
   
   .listing {
     flex-shrink: 0;
