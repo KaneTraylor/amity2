@@ -273,7 +273,7 @@ span {
 
 
 #moreExperienceHolder {
-    background: #d1cccc;
+    background: #fffefe;
     color: rgb(0, 0, 0);
     padding-top: 70px;
 }
@@ -444,6 +444,7 @@ span {
 
 #accordionHolder {
     padding: 130px 50px;
+    margin-top: 200px;
 }
 
 
@@ -1250,7 +1251,7 @@ button[disabled] svg {
 .container-hero2 {
     padding: 25px;
     width: auto;
-    border: 1px solid #000000;
+    border-radius: 25px;
     box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
     background-color: #ffffff;
     overflow: hidden;
