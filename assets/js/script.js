@@ -212,3 +212,4 @@ function initCarousel(carouselClass, prevBtnClass, nextBtnClass) {
   
   initCarousel('.carousel-1', '.carousel-1-prev', '.carousel-1-next');
   initCarousel('.carousel-2', '.carousel-2-prev', '.carousel-2-next');
+  initCarousel('.carousel-3', '.carousel-3-prev', '.carousel-3-next');

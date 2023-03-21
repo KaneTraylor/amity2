@@ -273,8 +273,8 @@ span {
 
 
 #moreExperienceHolder {
-    background: #1a1a1a;
-    color: white;
+    background: #d1cccc;
+    color: rgb(0, 0, 0);
     padding-top: 70px;
 }
 
@@ -291,7 +291,7 @@ span {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: -0.1px;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     -webkit-margin-start: auto;
     margin-inline-start: auto;
     -webkit-margin-end: auto;
@@ -315,7 +315,7 @@ span {
 }
 
 .experience_tab {
-    background: #161616;
+    background: #000000;
     padding: 50px;
     border-radius: 10px;
 }
@@ -325,7 +325,7 @@ span {
     width: 50px;
     height: 50px;
     border-radius: 8px;
-    background: #222;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -339,6 +339,7 @@ span {
     letter-spacing: 0em;
     margin-bottom: 15px;
     margin-top: 25px;
+    color: #fff;
 }
 
 .expLongText {
@@ -1339,6 +1340,7 @@ button[disabled] svg {
     font-size: 3.5rem;
     line-height: 3.5rem;
     margin-top: 5.5rem;
+    color: #ffffff;
 }
 
 .titansmallDesc {
